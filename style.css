@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: none;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.round-number {
+  padding: 0 5px;
+}
+
+.add-player {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+.input {
+  outline: none;
+  width: 100%;
+  border-width: 0;
+  padding-left: 10px;
+}
+
+.add {
+  background-color: gray;
+  border-left: 1px solid black;
+}
+
+.btn {
+  width: '100%';
+  padding: 5px 15px;
+  outline: none;
+}
+
+.btn.start {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 40px;
+}
+
+.btn.round {
+  display: none;
+  flex-direction: 'row';
+}
+
+.players {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+
+.player-name {
+  padding: 5px 20px;
+  flex: 1;
+  overflow-x: hidden;
+}
+
+.player-points {
+  padding-right: 15px;
+  padding-left: 15px;
+}
